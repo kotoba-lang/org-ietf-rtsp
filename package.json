@@ -1,0 +1,8 @@
+{
+  "name": "org-ietf-rtsp",
+  "private": true,
+  "description": "RTSP 1.0 (RFC 2326) message and interleaved-framing codec in portable .cljc",
+  "scripts": {
+    "test:cljs": "nbb --classpath \"$(clojure -A:cljs -Spath)\" scripts/verify-cljs.cljs"
+  }
+}
