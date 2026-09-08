@@ -30,7 +30,7 @@
   interpreted nor mangled by this layer.")
 
 (require '[rtsp.bytes :as rb]
-         '[clojure.string :as str])
+         '[kotoba.lang.text :as str])
 
 (def known-methods
   "[RFC 2326] §6.1's `Method` production. `extension-method = token` is
@@ -117,7 +117,7 @@
   shaped tokens, matched case-insensitively — `Content-Length` and
   `content-length` are the same header)."
   [headers name]
-  (some (fn [[k v]] (when (= (str/lower-case k) (str/lower-case name)) v)) headers))
+  (some (fn [[k v]] (when (= (str/lower k) (str/lower name)) v)) headers))
 
 ;; ── whole message ────────────────────────────────────────────────────────
 

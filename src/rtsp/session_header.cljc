@@ -7,7 +7,7 @@
   header\" — a server tells a client how long it will hold the session
   without activity; a client never sends one back.")
 
-(require '[clojure.string :as str])
+(require '[kotoba.lang.text :as str])
 
 (defn decode
   "`Session` header value -> `{:session-id \"...\" :timeout <seconds-or-nil>}`,

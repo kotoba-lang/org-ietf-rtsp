@@ -30,7 +30,7 @@
   this namespace actually does; it does not try to be a general ABNF
   interpreter for a grammar this small.")
 
-(require '[clojure.string :as str])
+(require '[kotoba.lang.text :as str])
 
 (defn- split-top-level
   "Split `s` on every occurrence of `ch` that is not inside a `\"..\"`
