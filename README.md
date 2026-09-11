@@ -117,8 +117,8 @@ Returned, never thrown. `:reason` keywords: `:rtsp/malformed-request-line`
 ## Verify
 
 ```sh
-clojure -M:test                                                        # JVM
-nbb --classpath "$(clojure -A:cljs -Spath)" scripts/verify-cljs.cljk   # ClojureScript
+kbb -M:test                                                        # JVM
+kbb --backend sci --classpath "$(kbb -A:cljs -Spath)" scripts/verify-cljs.cljk   # ClojureScript
 ```
 
 ## Not here
