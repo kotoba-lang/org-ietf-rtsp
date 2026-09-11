@@ -7,7 +7,7 @@
 ;; the SSRC-decodes-negative bug that motivated its
 ;; `unsigned-bit-shift-right x 0` idiom), so this is not a formality.
 ;;
-;;   nbb --classpath "$(clojure -A:cljs -Spath)" scripts/verify-cljs.cljs
+;;   nbb --classpath "$(clojure -A:cljs -Spath)" scripts/verify-cljs.cljk
 (ns verify-cljs
   (:require [clojure.test :as t]
             [rtsp.message-test]
