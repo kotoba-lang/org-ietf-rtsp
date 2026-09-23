@@ -1,5 +1,5 @@
 (ns rtsp.message-test
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.test :refer [deftest testing is]]
             [rtsp.message :as msg]
             [rtsp.bytes :as rb]
             [rtsp.session-header :as sh]

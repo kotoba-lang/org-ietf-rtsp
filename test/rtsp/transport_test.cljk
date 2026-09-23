@@ -1,5 +1,5 @@
 (ns rtsp.transport-test
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.test :refer [deftest testing is]]
             [rtsp.transport :as tr]
             [rtsp.session-header :as sh]))
 

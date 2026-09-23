@@ -1,5 +1,5 @@
 (ns rtsp.interleaved-test
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.test :refer [deftest testing is]]
             [rtsp.interleaved :as il]
             [rtsp.stream :as stream]
             [rtsp.bytes :as rb]))
